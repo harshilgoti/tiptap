@@ -91,8 +91,8 @@ Create a block-based editor using Tiptap in React that allows users to write and
 ### 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/tiptap-editor-task.git
-cd tiptap-editor-task
+git clone https://github.com/harshilgoti/tiptap.git
+cd tiptap
 npm install
 ```
 
@@ -120,9 +120,3 @@ Then open: [http://localhost:5173](http://localhost:5173)
 - [`@tiptap/react`](https://www.tiptap.dev/)
 - [`tailwindcss`](https://tailwindcss.com/)
 - Base64 image embedding (no backend)
-
----
-
-```
-
-```
