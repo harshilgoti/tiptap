@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+  @apply antialiased;
+}
+
+.tiptap p.is-editor-empty:first-child::before {
+  @apply text-gray-400 dark:text-gray-500;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.tiptap pre code {
+  font-family: "Fira Code", "JetBrains Mono", monospace;
+  @apply text-sm;
+}
+
+.tippy-box[data-theme~="tiptap-bubble"] {
+  @apply bg-black text-white rounded-lg shadow-xl;
+}
+.tippy-box[data-theme~="tiptap-bubble"][data-placement^="top"] > .tippy-arrow {
+  @apply border-t-black;
+}
+.tippy-box[data-theme~="tiptap-bubble"][data-placement^="bottom"]
+  > .tippy-arrow {
+  @apply border-b-black;
+}
+
+.tiptap ul li p,
+.tiptap ol li p {
+  @apply mb-0;
+}
+.tiptap ul li,
+.tiptap ol li {
+  @apply my-1;
+}
+
+.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.dark ::-webkit-scrollbar-track {
+  @apply bg-gray-700 rounded;
+}
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-gray-500 rounded;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
+
+.tiptap-editor-content {
+  .tiptap {
+    max-width: 100%;
+  }
+}
