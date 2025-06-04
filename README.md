@@ -26,18 +26,11 @@ Create a block-based editor using Tiptap in React that allows users to write and
 - ✅ Toolbar for block and inline formatting
 - ✅ View HTML or JSON output of the content
 
-### ✨ Bonus (Nice to Have)
-
-- ✅ Support for inline links
-- ✅ Drag-and-drop image insertion
-- ✅ Markdown paste support
-- ✅ Dark mode toggle
-
 ---
 
 ## 🛠 Tech Stack
 
-- ⚛️ React (18+)
+- ⚛️ React (19+)
 - ✍️ Tiptap (v2)
 - 🧠 TypeScript
 - 🎨 TailwindCSS
