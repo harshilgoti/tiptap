@@ -31,7 +31,6 @@ const ToolbarButton: React.FC<{
     }
   }, [editor, config]);
 
-  // const isDisabled = config.disabled ? config.disabled(editor) : !editor.can();
   const isActive = config.isActive ? config.isActive(editor) : false;
 
   return (
