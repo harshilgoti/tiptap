@@ -59,6 +59,8 @@ Create a block-based editor using Tiptap in React that allows users to write and
 │   │   └── Toolbar.tsx
 │   ├── constants
 │   │   └── editorConfig.ts
+│   ├── hooks
+│   │   └── useTheme.ts
 │   ├── index.css
 │   ├── index.tsx
 │   ├── types
@@ -66,6 +68,7 @@ Create a block-based editor using Tiptap in React that allows users to write and
 │   │   ├── highlight-languages.d.ts
 │   │   └── lowlight-core.d.ts
 │   ├── utils
+│   │   └── debounce.ts
 │   │   └── uploadImage.ts
 │   └── vite-env.d.ts
 ├── tailwind.config.js

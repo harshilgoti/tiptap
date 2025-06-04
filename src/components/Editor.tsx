@@ -2,7 +2,6 @@ import React, { useCallback, useEffect, useState } from "react";
 import {
   useEditor,
   EditorContent,
-  type EditorEvents,
   BubbleMenu,
   Editor as TiptapEditorInstance,
 } from "@tiptap/react";
@@ -22,6 +21,7 @@ import {
   NODE_TYPES,
 } from "../constants/editorConfig";
 import { uploadImage as defaultUploadImage } from "../utils/uploadImage";
+import { debounce } from "../utils/debounce";
 
 const lowlight = createLowlight();
 lowlight.register("javascript", javascript);
@@ -63,17 +63,18 @@ const TiptapEditor: React.FC<TiptapEditorProps> = ({
 }: TiptapEditorProps) => {
   const [editorMounted, setEditorMounted] = useState(false);
 
+  const debouncedOnChange = debounce((editor: TiptapEditorInstance) => {
+    onContentChange?.({
+      html: editor.getHTML(),
+      json: editor.getJSON(),
+    });
+  }, 300);
   const editor = useEditor({
     editable,
     extensions: EXTENSIONS_CONFIG,
     content: initialContent,
-    onUpdate: ({ editor: currentEditor }: EditorEvents["update"]) => {
-      if (onContentChange) {
-        onContentChange({
-          html: currentEditor.getHTML(),
-          json: currentEditor.getJSON(),
-        });
-      }
+    onUpdate: ({ editor: currentEditor }) => {
+      debouncedOnChange(currentEditor);
     },
     editorProps: {
       attributes: {

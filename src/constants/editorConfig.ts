@@ -257,21 +257,7 @@ export const DEFAULT_TOOLBAR_CONFIG: ToolbarConfig = {
 
 export const PLACEHOLDER_TEXT = "Start typing...";
 
-export const DEFAULT_EDITOR_CONTENT = `
-  <h1>Tiptap Editor Demo App!</h1>
-  <p>Try out the formatting options in the toolbar above.</p>
-  <ul>
-    <li>Bullet list item</li>
-  </ul>
-  <ol>
-    <li>Numbered list item </li>
-  </ol>
-  <blockquote>This is a blockquote. It's great for highlighting text.</blockquote>
-  <pre><code class="language-javascript">console.log('Hello, world!');</code></pre>
-  <p>You can also insert horizontal rules:</p>
-  <hr>
-  <p>And add <strong>bold</strong>, <em>italic</em>, or <u>underlined</u> text, as well as <a href="https://google.com">links</a>.</p>
-`;
+export const DEFAULT_EDITOR_CONTENT = `<h1>Tiptap Editor Demo App!</h1><p>Try out the formatting options in the toolbar above.</p><ul><li><p>Bullet list item</p></li></ul><ol><li><p>Numbered list item</p></li></ol><blockquote class="border-l-4 border-gray-300 dark:border-gray-600 pl-4 italic my-4"><p>This is a blockquote. It's great for highlighting text.</p></blockquote><pre class="bg-gray-100 dark:bg-gray-800 text-sm p-4 rounded-md overflow-x-auto"><code class="language-javascript">console.log('Hello, world!');</code></pre><p>You can also insert horizontal rules:</p><hr class="my-4 border-gray-300 dark:border-gray-600"><p>And add <strong>bold</strong>, <em>italic</em>, or <u>underlined</u> text, as well as <a target="_blank" rel="noopener noreferrer nofollow" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline" href="https://google.com">links</a>.</p>`;
 
 export const EXTENSIONS_CONFIG = [
   StarterKit.configure({
@@ -283,11 +269,6 @@ export const EXTENSIONS_CONFIG = [
       depth: 20,
     },
   }),
-  // Heading.configure({
-  //     HTMLAttributes: {
-  //       class: 'my-custom-heading',
-  //     },
-  //   })
   UnderlineExtension,
   ImageExtension.configure({
     inline: false,
