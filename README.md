@@ -1,4 +1,3 @@
-````
 # 📝 React Rich Text Block Editor using Tiptap
 
 ## 📌 Title
@@ -40,7 +39,6 @@ Create a block-based editor using Tiptap in React that allows users to write and
 
 ## 📁 Folder Structure
 
-```plaintext
 .
 ├── eslint.config.js
 ├── index.html
@@ -48,34 +46,36 @@ Create a block-based editor using Tiptap in React that allows users to write and
 ├── package-lock.json
 ├── postcss.config.js
 ├── public
-│   └── vite.svg
+│ └── vite.svg
 ├── README.md
 ├── src
-│   ├── App.css
-│   ├── App.tsx
-│   ├── assets
-│   │   └── react.svg
-│   ├── components
-│   │   ├── Editor.tsx
-│   │   └── Toolbar.tsx
-│   ├── constants
-│   │   └── editorConfig.ts
-│   ├── index.css
-│   ├── index.tsx
-│   ├── types
-│   │   ├── editor.d.ts
-│   │   ├── highlight-languages.d.ts
-│   │   └── lowlight-core.d.ts
-│   ├── utils
-│   │   └── uploadImage.ts
-│   └── vite-env.d.ts
+│ ├── App.css
+│ ├── App.tsx
+│ ├── assets
+│ │ └── react.svg
+│ ├── components
+│ │ ├── Editor.tsx
+│ │ └── Toolbar.tsx
+│ ├── constants
+│ │ └── editorConfig.ts
+│ ├── index.css
+│ ├── index.tsx
+│ ├── types
+│ │ ├── editor.d.ts
+│ │ ├── highlight-languages.d.ts
+│ │ └── lowlight-core.d.ts
+│ ├── utils
+│ │ └── uploadImage.ts
+│ └── vite-env.d.ts
 ├── tailwind.config.js
 ├── tsconfig.app.json
 ├── tsconfig.json
 ├── tsconfig.node.json
 └── vite.config.ts
+
 ```
-````
+
+```
 
 ---
 
