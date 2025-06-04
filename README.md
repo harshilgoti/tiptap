@@ -112,7 +112,3 @@ Then open: [http://localhost:5173](http://localhost:5173)
 - [`@tiptap/react`](https://www.tiptap.dev/)
 - [`tailwindcss`](https://tailwindcss.com/)
 - Base64 image embedding (no backend)
-
-```
-
-```
